@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BriaCell Bria-ABC 144-Event Monte Carlo Research Note</title>
+  <meta name="description" content="Public-data event-accrual Monte Carlo analysis of BriaCell's Bria-ABC Phase 3 144-event interim analysis, with enrollment timing, survival assumptions, cash runway and dilution risk.">
+  <meta property="og:title" content="BriaCell Bria-ABC 144-Event Monte Carlo Research Note">
+  <meta property="og:description" content="A situation-specific biotech equity research framework combining trial design, enrollment reconstruction, survival modeling, cash runway and dilution risk.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="./">BriaCell <span>Event Model</span></a>
+      <div class="nav-links">
+        <a href="#findings">Findings</a>
+        <a href="#method">Method</a>
+        <a href="#cash">Cash runway</a>
+        <a href="reports/en.html">Full EN report</a>
+        <a href="reports/tr.html">Türkçe</a>
+        <a href="downloads/english-report.pdf">PDF EN</a>
+        <a href="downloads/turkish-report.pdf">PDF TR</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Public-data biotech equity research note</div>
+        <h1>BriaCell Bria-ABC Phase 3: 144-Event Monte Carlo Model</h1>
+        <p class="lead">A situation-specific research framework combining Phase 3 trial design, enrollment reconstruction, survival assumptions, Monte Carlo event accrual, cash runway and dilution risk.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="reports/en.html">Read full English report</a>
+          <a class="btn" href="reports/tr.html">Türkçe rapor</a>
+          <a class="btn" href="downloads/english-report.pdf">Download PDF</a>
+        </div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-grid">
+          <div class="metric"><div class="num">144</div><div class="label">interim events / deaths modeled</div></div>
+          <div class="metric"><div class="num">≥230</div><div class="label">reported enrolled as of May 2026</div></div>
+          <div class="metric"><div class="num">Dec '26</div><div class="label">HR=1 / standard-therapy window</div></div>
+          <div class="metric"><div class="num">Feb '27</div><div class="label">Phase 1/2-consistent survival window</div></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="findings">
+      <div class="container">
+        <h2>Core finding</h2>
+        <p class="sub">The analysis does not predict trial success. It estimates when the 144th death would be expected under different survival assumptions.</p>
+        <div class="timeline">
+          <div class="timebox warn"><div class="date">Dec 2026</div><div class="tag">HR=1 / standard-therapy-like scenario</div></div>
+          <div class="timebox"><div class="date">Jan 2027</div><div class="tag">transition / grey-zone interpretation</div></div>
+          <div class="timebox good"><div class="date">Feb 2027</div><div class="tag">Phase 1/2-consistent survival assumptions</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container charts">
+        <div class="chart"><img src="assets/img/event_intervals.png" alt="Monte Carlo 144-event date intervals"></div>
+        <div class="chart"><img src="assets/img/enrollment_sensitivity.png" alt="Enrollment sensitivity scenarios"></div>
+      </div>
+    </section>
+
+    <section class="section" id="method">
+      <div class="container">
+        <h2>What was modeled?</h2>
+        <p class="sub">The model reconstructs the likely patient-entry schedule from public enrollment disclosures and simulates death dates under multiple survival assumptions.</p>
+        <div class="cards">
+          <div class="card"><h3>1. Trial design</h3><p>The base event set focuses on the likely primary Phase 3 comparison: Bria-IMT+CPI vs physician's choice. The early monotherapy cohort is excluded in the base case.</p></div>
+          <div class="card"><h3>2. Enrollment timing</h3><p>Reported milestones are converted into a synthetic patient-entry calendar, including accelerating enrollment scenarios after the latest disclosure.</p></div>
+          <div class="card"><h3>3. Survival simulation</h3><p>Each patient receives a simulated survival time from an exponential distribution calibrated to scenario-specific median OS assumptions.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container charts">
+        <div class="chart"><img src="assets/img/cumulative_entries.png" alt="Cumulative main analysis entries"></div>
+        <div class="chart"><img src="assets/img/probabilities.png" alt="Probability of event by selected dates"></div>
+      </div>
+    </section>
+
+    <section class="section" id="cash">
+      <div class="container">
+        <h2>Clinical timing vs cash runway</h2>
+        <p class="sub">The report adds a financial overlay: the same delay that may be clinically encouraging can also increase financing pressure.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Clinical scenario</th><th>Median 144th event</th><th>Interpretation</th><th>Financing angle</th></tr></thead>
+            <tbody>
+              <tr><td>HR=1 / OS 9 vs 9 months</td><td>December 2026</td><td>Standard-therapy-like event window</td><td>Cash cushion remains, but dilution optionality stays relevant</td></tr>
+              <tr><td>Phase 1/2 base / Bria 16.5 vs TPC 9 months</td><td>February 2027</td><td>Later window becomes more consistent with longer treatment-arm survival</td><td>Runway tightens as the information window moves later</td></tr>
+              <tr><td>Optimistic survival scenario</td><td>March 2027</td><td>Potentially more encouraging timing if enrollment assumptions hold</td><td>Pre-readout or near-readout financing risk becomes more material</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <br>
+        <div class="chart"><img src="assets/img/cash_runway.png" alt="Cash runway matrix chart"></div>
+        <p class="note"><strong>Key interpretation:</strong> delayed event accrual is not automatically positive. It may reflect slower enrollment, operational timing, data cleaning, patient mix, or longer treatment-arm survival. The model is a framework for interpreting timing, not a prediction of clinical success.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Read the full report</h2>
+        <p class="sub">The full report includes assumptions, sources, Monte Carlo outputs, charts, limitations and the financial overlay.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="reports/en.html">English HTML report</a>
+          <a class="btn" href="reports/tr.html">Türkçe HTML rapor</a>
+          <a class="btn" href="downloads/english-report.pdf">English PDF</a>
+          <a class="btn" href="downloads/turkish-report.pdf">Türkçe PDF</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="container disclaimer">
+    <strong>Disclaimer:</strong> This is a public-data modeling exercise for research and educational purposes only. It is not investment advice, not a recommendation to buy or sell securities, and not a prediction of clinical trial success. All assumptions may be wrong. Clinical outcomes, enrollment timing, event adjudication, financing activity and company disclosures may differ materially from the model.
+  </div>
+  <footer class="footer"><div class="container">Last updated: June 28, 2026 · Static GitHub Pages version</div></footer>
+</body>
+</html>
